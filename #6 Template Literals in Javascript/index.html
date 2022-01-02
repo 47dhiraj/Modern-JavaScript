@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // Without using Template Literal  ==> large line of HTML code lai javascript variable ma yesari hold garauna ekdam jhanjhatilo or garo tarikale code lekhna parcha.. yei kaam lai sajilo garauna Template literals ko use garna thaliyeko ho.
+        // let name = 'Agent 47'
+        // let drink1 = 'tea'
+        // let drink2 = 'coffee'
+
+        // let myHtml = "<h3> Hello" + name + "</h3>" +
+        //             "<p> Do you like " + drink1 + " or " + drink2 + " ?"
+        // document.body.innerHTML = myHtml
+
+        
+
+
+
+        
+        // Using Template Literals ( i.e using HTML code inside backticks) ==> Large HTML ko code lai javascript variable ma hold garayera rakhna or tyo HTML code lai sajilai sanga manipulate garna cha vani template literal ko use garincha.
+        let name = 'Agent 47'
+        let drink1 = 'tea'
+        let drink2 = 'coffee'
+
+        let myHtml = `<h3> Hello ${name}</h3>
+                    <p> Do you like ${drink1} or ${drink2} ?`
+
+        document.body.innerHTML = myHtml
+
+    </script>
+    
+</body>
+</html>
